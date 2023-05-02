@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Receipt</title>
+    <style>
+        .receipt {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .receipt h2 {
+            margin-top: 0;
+        }
+        .receipt table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .receipt table td, .receipt table th {
+            padding: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        .receipt table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <h2>Transaction Receipt</h2>
+        <table>
+            <tr>
+                <th>Account credited:</th>
+                <td>{{tally_account}}</td>
+            </tr>
+            <tr>
+                <th>Amount:</th>
+                <td>{{amount}}</td>
+            </tr>
+            <tr>
+                <th>Transaction Id:</th>
+                <td>{{transaction_id}}</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td>{{date}}</td>
+            </tr>
+        </table>
+        <p>Thank you for your business.</p>
+    </div>
+</body>
+</html>
